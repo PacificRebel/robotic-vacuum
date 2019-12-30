@@ -6,7 +6,7 @@ class Vacuum
 # this method takes the input from the input.txt file, converts the content
 # into a string and then into an array, so I can extract the information
   def take_input
-    File.open("input.txt").read.split
+    pp File.open("input.txt").read.split
   end
 
   def create_grid(x, y)
@@ -23,7 +23,8 @@ class Vacuum
     pp @grid_pattern = (horizontal_lines + vertical_lines)
   end
 
+  # this sets the starting point according to instructions
   def set_starting_point(x, y)
-
+    take_input[2, 2].join(",")
   end
 end
