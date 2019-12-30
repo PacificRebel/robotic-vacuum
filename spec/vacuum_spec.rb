@@ -10,7 +10,7 @@ describe Vacuum do
       expect(subject.take_input).to eq ["5", "5", "1", "2", "1", "0", "2", "2", "2", "3", "NNESEESWNWW"]
     end
   end
-  
+
   describe '#create_grid' do
     it 'should take the grid measurements and return a grid' do
       Vacuum.new
@@ -18,10 +18,20 @@ describe Vacuum do
     end
   end
 
+  # this test will not be needed after the drive_north etc methdods work as
+  # as I won't need to return the starting point as a string:
+
   describe '#set_starting_point' do
     it 'sets the vacuum starting point according to input' do
       Vacuum.new
       expect(subject.set_starting_point(1, 2)).to eq '1,2'
     end
   end
+
+ #  describe '#drive_north' do
+ #   it 'moves location one step according to instructions' do
+ #     Vacuum.new
+ #     expect(subject.drive_north('N')).to eq '1, 3'
+ #   end
+ # end
 end

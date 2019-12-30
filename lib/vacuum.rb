@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class Vacuum
-  attr_reader :create_grid
+
+  attr_reader :create_grid, :starting_point
 
 # this method takes the input from the input.txt file, converts the content
 # into a string and then into an array, so I can extract the information
@@ -25,6 +26,13 @@ class Vacuum
 
   # this sets the starting point according to instructions
   def set_starting_point(x, y)
-    take_input[2, 2].join(",")
+    starting_point = take_input[2, 2].join(",")
   end
+
+  # this method increments the fourth element of the array by one
+  # def drive_north(direction)
+  #   if direction == 'N'
+  #     set_starting_point[3] = "4"
+  #   end
+  # end
 end
