@@ -18,8 +18,8 @@ describe Vacuum do
     end
   end
 
-  # this test will not be needed after the drive_north etc methdods work as
-  # as I won't need to return the starting point as a string:
+  # this following test will not be needed after the drive_north etc methods
+  # work as I won't need to return the starting point as a string:
 
   describe '#set_starting_point' do
     it 'sets the vacuum starting point according to input' do
