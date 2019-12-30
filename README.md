@@ -11,6 +11,13 @@ mkdir spec
 rspec --init
 gem install rubocop
 
+### So far, the unfinished code...
+- constructs a grid, according to input received from the input.txt file
+- sets a starting point for the hoover according to input from the input.txt
+file
+- all tests passing to that point
+- test written for driving north, code not ready yet
+
 ### What each file does
 
 #### input.txt:
