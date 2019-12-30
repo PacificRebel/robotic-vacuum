@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'vacuum'
 
 describe Vacuum do
-
   describe '#create_grid' do
     it 'should take the grid measurements and return a grid' do
       Vacuum.new

@@ -1,5 +1,6 @@
-class Vacuum
+# frozen_string_literal: true
 
+class Vacuum
   attr_reader :create_grid
 
   def create_grid(x, y)
