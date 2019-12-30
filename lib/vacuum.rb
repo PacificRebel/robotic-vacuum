@@ -3,6 +3,12 @@
 class Vacuum
   attr_reader :create_grid
 
+# this method takes the input from the input.txt file, converts the content
+# into a string and then into an array, so I can extract the information
+  def take_input
+    File.open("input.txt").read.split
+  end
+
   def create_grid(x, y)
     horizontal_line = []
     horizontal_line << (0..x).to_a
@@ -15,5 +21,9 @@ class Vacuum
     # vertical lines
     # pp is used here to help visualise the grid when testing
     pp @grid_pattern = (horizontal_lines + vertical_lines)
+  end
+
+  def set_starting_point(x, y)
+
   end
 end
