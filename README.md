@@ -43,16 +43,16 @@ You will write a program that navigates an imaginary robotic hoover
  has 5 columns and 5 rows, so 25 possible hoover positions. The bottom  
  left corner is the point of origin for our coordinate system, so as the  
  room contains all coordinates its bottom left corner is defined by  
- X: 0 and Y: 0.
+ X: 0 and Y: 0.  
 ● Locations of patches of dirt, also defined by X and Y coordinates  
-identifying the bottom left corner of those grid positions.
-● An initial hoover position (X and Y coordinates like patches of dirt)
+identifying the bottom left corner of those grid positions.  
+● An initial hoover position (X and Y coordinates like patches of dirt)  
 ● Driving instructions (as ​cardinal directions​) where e.g. N and E mean  
 "go north" and "go east" respectively).  
 
 Goal
 The goal of the program is to take the room dimensions, the locations  
 of the dirt patches, the hoover location and the driving instructions  
-as input and to then output the following:
-● The final hoover position (X, Y)
+as input and to then output the following:  
+● The final hoover position (X, Y)  
 ● The number of patches of dirt the robot cleaned up  
