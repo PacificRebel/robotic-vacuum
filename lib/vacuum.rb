@@ -45,7 +45,7 @@ class Vacuum
     if direction == 'E'
       @new_horizontal_position = take_input[2].to_i
       @new_horizontal_position += 1
-      @current_position = "#{take_input[3].to_i},#{@new_horizontal_position}"
+      @current_position = "#{@new_horizontal_position},#{take_input[3].to_i}"
     end
   end
 
@@ -54,6 +54,14 @@ class Vacuum
       @new_vertical_position = take_input[3].to_i
       @new_vertical_position -= 1
       @current_position = "#{take_input[2].to_i},#{@new_vertical_position}"
+    end
+  end
+
+  def drive_west(direction)
+    if direction == 'W'
+      @new_horizontal_position = take_input[2].to_i
+      @new_horizontal_position -= 1
+      @current_position = "#{@new_horizontal_position},#{take_input[3].to_i}"
     end
   end
 end

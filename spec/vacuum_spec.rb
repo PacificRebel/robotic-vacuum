@@ -50,4 +50,12 @@ describe Vacuum do
       expect(subject.drive_south('S')).to eq '1,1'
     end
   end
+
+  describe '#drive_west' do
+    it 'moves location one step according to instructions' do
+      Vacuum.new
+      expect(subject.set_starting_point(1, 2)).to eq '1,2'
+      expect(subject.drive_west('W')).to eq '0,2'
+    end
+  end
 end
