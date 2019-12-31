@@ -48,4 +48,12 @@ class Vacuum
       @current_position = "#{take_input[3].to_i},#{@new_horizontal_position}"
     end
   end
+
+  def drive_south(direction)
+    if direction == 'S'
+      @new_vertical_position = take_input[3].to_i
+      @new_vertical_position -= 1
+      @current_position = "#{take_input[2].to_i},#{@new_vertical_position}"
+    end
+  end
 end
