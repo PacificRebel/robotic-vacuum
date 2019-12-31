@@ -28,10 +28,11 @@ describe Vacuum do
     end
   end
 
- #  describe '#drive_north' do
- #   it 'moves location one step according to instructions' do
- #     Vacuum.new
- #     expect(subject.drive_north('N')).to eq '1, 3'
- #   end
- # end
+  describe '#drive_north' do
+   it 'moves location one step according to instructions' do
+     Vacuum.new
+     expect(subject.set_starting_point(1, 2)).to eq '1,2'
+     expect(subject.drive_north('N')).to eq '1,3'
+   end
+ end
 end

@@ -26,13 +26,17 @@ class Vacuum
 
   # this sets the starting point according to instructions
   def set_starting_point(x, y)
-    starting_point = take_input[2, 2].join(",")
+    @starting_point = take_input[2, 2]
+    @starting_point.join(",")
   end
 
   # this method increments the fourth element of the array by one
-  # def drive_north(direction)
-  #   if direction == 'N'
-  #     set_starting_point[3] = "4"
-  #   end
-  # end
+  def drive_north(direction)
+    if direction == 'N'
+      @new_vertical_position = take_input[3].to_i
+      @new_vertical_position += 1
+      @current_position = "#{take_input[2].to_i},#{@new_vertical_position}"
+      # @current_position.join(",")
+    end
+  end
 end
