@@ -49,6 +49,7 @@ class Vacuum
     end
   end
 
+  # this method subtracts the fourth element of the array by one
   def drive_south(direction)
     if direction == 'S'
       @new_vertical_position = take_input[3].to_i
@@ -57,6 +58,7 @@ class Vacuum
     end
   end
 
+  # this method subtracts the third element of the array by one
   def drive_west(direction)
     if direction == 'W'
       @new_horizontal_position = take_input[2].to_i

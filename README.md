@@ -15,8 +15,8 @@ gem install rubocop
 - constructs a grid, according to input received from the input.txt file
 - sets a starting point for the hoover according to input from the input.txt
 file
+- moves north, south, east and west from starting point defined in input.txt
 - all tests passing to that point
-- test written for driving north, code not ready yet
 
 ### What each file does
 
