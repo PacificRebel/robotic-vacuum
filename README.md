@@ -50,7 +50,8 @@ identifying the bottom left corner of those grid positions.
 ● Driving instructions (as ​cardinal directions​) where e.g. N and E mean  
 "go north" and "go east" respectively).  
 
-Goal
+Goal:  
+
 The goal of the program is to take the room dimensions, the locations  
 of the dirt patches, the hoover location and the driving instructions  
 as input and to then output the following:  
