@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 
-class Vacuum
+# I am using the example input for this code at this early stage.
 
+class Vacuum
   attr_reader :create_grid, :starting_point
 
-# this method takes the input from the input.txt file, converts the content
-# into a string and then into an array, so I can extract the information
+  # this method takes the input from the input.txt file, converts the content
+  # into a string and then into an array, so I can extract the information
   def take_input
-    pp File.open("input.txt").read.split
+    pp File.open('input.txt').read.split
   end
 
   def create_grid(x, y)
@@ -25,9 +26,9 @@ class Vacuum
   end
 
   # this sets the starting point according to instructions
-  def set_starting_point(x, y)
+  def set_starting_point(_x, _y)
     @starting_point = take_input[2, 2]
-    @starting_point.join(",")
+    @starting_point.join(',')
   end
 
   # this method increments the fourth element of the array by one
@@ -36,7 +37,15 @@ class Vacuum
       @new_vertical_position = take_input[3].to_i
       @new_vertical_position += 1
       @current_position = "#{take_input[2].to_i},#{@new_vertical_position}"
-      # @current_position.join(",")
+    end
+  end
+
+  # this method increments the third element of the array by one
+  def drive_east(direction)
+    if direction == 'E'
+      @new_horizontal_position = take_input[2].to_i
+      @new_horizontal_position += 1
+      @current_position = "#{take_input[3].to_i},#{@new_horizontal_position}"
     end
   end
 end
